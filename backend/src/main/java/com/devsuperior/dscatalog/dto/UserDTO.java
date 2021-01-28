@@ -10,13 +10,14 @@ import java.util.Set;
 
 public class UserDTO implements Serializable {
     private static final long serialVersionUID = 5494145813754202454L;
-    Set<RoleDTO> roles = new HashSet<>();
+
     private long id;
     @NotBlank
     private String firstName;
     private String lastName;
     @Email()
     private String email;
+    Set<RoleDTO> roles = new HashSet<>();
 
     public UserDTO() {
     }
